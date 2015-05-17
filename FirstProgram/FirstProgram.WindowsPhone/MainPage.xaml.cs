@@ -48,6 +48,7 @@ namespace FirstProgram
 
         private void UIElement_OnTapped(object sender, TappedRoutedEventArgs e)
         {
+
             StaticMethod.ShowMsg(textbox1.Text);
         }
     }

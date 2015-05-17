@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="App3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Text="0-0" FontSize="100"></TextBox>
+        <TextBox Grid.Row="0" FontSize="100" Text="0-1" Grid.Column="1"></TextBox>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Logo.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="2" Content="Button 1" FontSize="50" HorizontalAlignment="Stretch" Click="Button_Click" VerticalAlignment="Center" Margin="59,54,59,53">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="images/^370739BF7C7945350CB4182F1CF6191FD1F08D2B7EDC2E44AC^pimgpsh_fullsize_distr.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <!--<StackPanel Orientation="Horizontal">
+                <TextBox Text="abc"></TextBox>
+            <TextBox Text="abc"></TextBox>
+            <StackPanel Width="200">
+                <TextBox ></TextBox>
+            </StackPanel>
+        </StackPanel>-->
+    </Grid>
+
+</Page>

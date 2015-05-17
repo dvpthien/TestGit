@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="App3.Main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock  Margin="100" FontSize="50" Text="Chào"></TextBlock>
+        <TextBlock  Margin="227,100,-27,100" FontSize="50" Name="txtName" Text=""></TextBlock>
+
+        <Button FontSize="100" Content="Button" Margin="343,201,0,415" Click="Button_Click"></Button>
+    </Grid>
+</Page>
